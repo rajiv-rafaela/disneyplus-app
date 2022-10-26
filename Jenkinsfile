@@ -1,7 +1,10 @@
-Pi[leline{
+Pipeline{ 
+  
   agent any
   
-  stages("build"){
+  stages{
+  
+  stage("build"){
   
   
     steps{
@@ -10,7 +13,7 @@ Pi[leline{
   
      }
   
-  stages("test"){
+  stage("test"){
      
   
     steps{
@@ -19,7 +22,7 @@ Pi[leline{
   
      }
 
-  stages("deploy"){
+  stage("deploy"){
   
   
     steps{
@@ -28,5 +31,7 @@ Pi[leline{
   
      }
 
-}
+  }
+  
+  }
   
